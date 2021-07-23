@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bruneibus.busroutesystem.PlacesFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="#c30000">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Distance in Kilometer"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerdistance"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corner"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"></android.support.v7.widget.AppCompatSpinner>
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnertype"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:background="@drawable/rounded_corner"
+
+            android:layout_height="wrap_content"></android.support.v7.widget.AppCompatSpinner>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
